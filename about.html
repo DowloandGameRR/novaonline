@@ -3,43 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hakkımızda - Nova Online</title>
+    <title>Hakkımızda | Nova Online</title>
     <style>
-        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #0a0a15; color: #d0d0ff; }
-        header { position: fixed; width: 100%; background: rgba(10, 10, 21, 0.95); backdrop-filter: blur(12px); padding: 10px 0; text-align: center; box-shadow: 0 4px 20px rgba(107, 27, 154, 0.4); z-index: 1000; border-bottom: 1px solid #6a1b9a; }
-        .logo img { max-height: 80px; }
-        nav { margin-top: 5px; }
-        nav a { color: #bb86fc; text-decoration: none; margin: 0 20px; font-size: 16px; font-weight: 600; text-transform: uppercase; }
-        .content { padding: 180px 20px 100px; max-width: 900px; margin: 0 auto; line-height: 1.8; text-align: center; }
-        .content h2 { color: #bb86fc; font-size: 36px; }
-        .highlight { border: 1px solid #6a1b9a; background: #161625; padding: 30px; border-radius: 15px; margin-top: 40px; }
-        footer { background: #07070f; padding: 30px; text-align: center; border-top: 1px solid #6a1b9a; position: absolute; bottom: 0; width: 100%; }
+        :root { --accent: #bb86fc; --bg: #050508; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: #e0e0ff; }
+        .bg-layer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 90% 10%, #1a1a3a 0%, #050508 50%); z-index: -1; }
+        header { position: fixed; width: 100%; padding: 20px 0; background: rgba(5, 5, 8, 0.7); backdrop-filter: blur(15px); z-index: 1000; display: flex; justify-content: space-around; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo img { height: 60px; }
+        nav a { color: #aaa; text-decoration: none; margin: 0 20px; font-size: 15px; }
+        .content { padding: 200px 15% 100px; max-width: 800px; margin: 0 auto; text-align: center; }
+        h2 { font-weight: 300; font-size: 32px; letter-spacing: 2px; color: white; }
+        p { line-height: 2; color: #888; font-size: 17px; margin-top: 30px; }
     </style>
 </head>
 <body>
+    <div class="bg-layer"></div>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="https://auto.creavite.co/api/out/wjdrlh3K1ZP3t8lufq_static.png" alt="Nova Online Logo"></a>
-        </div>
-        <nav>
-            <a href="index.html">Ana Sayfa</a>
-            <a href="services.html">Hizmetler</a>
-            <a href="about.html">Hakkımızda</a>
-            <a href="contact.html">İletişim</a>
-        </nav>
+        <div class="logo"><img src="https://auto.creavite.co/api/out/wjdrlh3K1ZP3t8lufq_static.png" alt="Logo"></div>
+        <nav><a href="index.html">Ana Sayfa</a><a href="services.html">Hizmetler</a><a href="about.html">Hakkımızda</a><a href="contact.html">İletişim</a></nav>
     </header>
-
     <div class="content">
-        <h2>Biz Kimiz?</h2>
-        <p>Nova Online, dijital dönüşüm yolculuğunda markalara rehberlik etmek amacıyla kurulmuş bir teknoloji atölyesidir. Kodlamayı bir sanat, tasarımı ise bir dil olarak görüyoruz.</p>
-        <div class="highlight">
-            <p><strong>Vizyonumuz:</strong> Teknolojiyi herkes için ulaşılabilir ve estetik hale getirmek.</p>
-            <p><strong>Misyonumuz:</strong> Müşterilerimizin dijital varlıklarını en yüksek kalite standartlarında inşa etmek.</p>
-        </div>
+        <h2>Hakkımızda</h2>
+        <p>Nova Online, dijital dünyadaki ihtiyaçlarınıza sade ve etkili çözümler sunmak için kurulmuştur. Gereksiz karmaşadan uzak, sadece kaliteye odaklanan bir çalışma prensibini benimsiyoruz.</p>
     </div>
-
-    <footer>
-        <p>&copy; 2026 Nova Online. Tüm hakları saklıdır.</p>
-    </footer>
 </body>
 </html>
