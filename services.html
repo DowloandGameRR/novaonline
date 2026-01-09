@@ -3,62 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hizmetler - Nova Online</title>
+    <title>Hizmetler | Nova Online</title>
     <style>
-        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #0a0a15; color: #d0d0ff; }
-        header { position: fixed; width: 100%; background: rgba(10, 10, 21, 0.95); backdrop-filter: blur(12px); padding: 10px 0; text-align: center; box-shadow: 0 4px 20px rgba(107, 27, 154, 0.4); z-index: 1000; border-bottom: 1px solid #6a1b9a; }
-        .logo img { max-height: 80px; }
-        nav { margin-top: 5px; }
-        nav a { color: #bb86fc; text-decoration: none; margin: 0 20px; font-size: 16px; font-weight: 600; text-transform: uppercase; }
-        nav a:hover { color: #ffffff; }
-        section { padding: 160px 20px 80px; text-align: center; }
-        h2 { font-size: 40px; color: #bb86fc; margin-bottom: 10px; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1200px; margin: 60px auto; }
-        .service-card { background: #161625; padding: 40px; border-radius: 20px; border: 1px solid #2a2a4a; transition: all 0.4s; }
-        .service-card:hover { transform: translateY(-10px); border-color: #bb86fc; box-shadow: 0 15px 35px rgba(107, 27, 154, 0.3); }
-        .service-card img { width: 80px; height: 80px; margin-bottom: 20px; border-radius: 10px; }
-        .service-card h3 { color: #bb86fc; font-size: 24px; margin-bottom: 15px; }
-        .service-card p { line-height: 1.6; color: #a0a0cf; }
-        footer { background: #07070f; padding: 30px; text-align: center; border-top: 1px solid #6a1b9a; }
+        :root { --accent: #bb86fc; --bg: #050508; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: #e0e0ff; }
+        .bg-layer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 10% 10%, #151525 0%, #050508 50%); z-index: -1; }
+        header { position: fixed; width: 100%; padding: 20px 0; background: rgba(5, 5, 8, 0.7); backdrop-filter: blur(15px); z-index: 1000; display: flex; justify-content: space-around; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo img { height: 60px; }
+        nav a { color: #aaa; text-decoration: none; margin: 0 20px; font-size: 15px; transition: 0.3s; }
+        
+        .container { padding: 150px 10% 100px; max-width: 1200px; margin: 0 auto; }
+        h2 { font-weight: 300; font-size: 32px; text-align: center; margin-bottom: 60px; letter-spacing: 2px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: rgba(255,255,255,0.02); padding: 35px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .card:hover { background: rgba(255,255,255,0.04); border-color: var(--accent); transform: translateY(-5px); }
+        .card h3 { font-size: 20px; color: var(--accent); margin-bottom: 10px; font-weight: 500; }
+        .card p { color: #888; font-size: 15px; line-height: 1.6; margin: 0; }
     </style>
 </head>
 <body>
+    <div class="bg-layer"></div>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="https://auto.creavite.co/api/out/wjdrlh3K1ZP3t8lufq_static.png" alt="Nova Online Logo"></a>
-        </div>
-        <nav>
-            <a href="index.html">Ana Sayfa</a>
-            <a href="services.html">Hizmetler</a>
-            <a href="about.html">Hakkımızda</a>
-            <a href="contact.html">İletişim</a>
-        </nav>
+        <div class="logo"><img src="https://auto.creavite.co/api/out/wjdrlh3K1ZP3t8lufq_static.png" alt="Logo"></div>
+        <nav><a href="index.html">Ana Sayfa</a><a href="services.html">Hizmetler</a><a href="about.html">Hakkımızda</a><a href="contact.html">İletişim</a></nav>
     </header>
 
-    <section>
-        <h2>Uzmanlık Alanlarımız</h2>
-        <p>İhtiyaçlarınıza özel, yüksek performanslı çözümler üretiyoruz.</p>
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/006/389/344/small/purple-black-vs-logo-letter-design-vector.jpg" alt="Logo">
-                <h3>Logo Tasarım</h3>
-                <p>Kurumsal kimliğinizi yansıtan, modern ve akılda kalıcı vektörel tasarımlar.</p>
-            </div>
-            <div class="service-card">
-                <img src="https://img.freepik.com/premium-photo/program-code-icon-purple-background-3d_327483-701.jpg" alt="Python">
-                <h3>Python Kodlama</h3>
-                <p>Veri analizi, bot yazılımları ve karmaşık arka plan sistemleri geliştirme.</p>
-            </div>
-            <div class="service-card">
-                <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg" alt="Web">
-                <h3>Web Geliştirme</h3>
-                <p>Full-stack HTML, CSS ve JavaScript teknolojileri ile hızlı ve mobil uyumlu siteler.</p>
-            </div>
+    <div class="container">
+        <h2>Hizmetlerimiz</h2>
+        <div class="grid">
+            <div class="card"><h3>Python</h3><p>Otomasyon, bot yazılımları ve veri işleme çözümleri.</p></div>
+            <div class="card"><h3>Java</h3><p>Güçlü ve ölçeklenebilir sistem mimarileri.</p></div>
+            <div class="card"><h3>HTML & CSS</h3><p>Modern, hızlı ve estetik arayüz kodlama.</p></div>
+            <div class="card"><h3>Logo Tasarımı</h3><p>Minimalist ve kurumsal kimlik çalışmaları.</p></div>
+            <div class="card"><h3>Banner Tasarımı</h3><p>Dikkat çekici dijital görsel içerikler.</p></div>
+            <div class="card"><h3>Web Geliştirme</h3><p>Anahtar teslim profesyonel web siteleri.</p></div>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Nova Online. Tüm hakları saklıdır.</p>
-    </footer>
+    </div>
 </body>
 </html>
