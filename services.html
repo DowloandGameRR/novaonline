@@ -6,26 +6,26 @@
     <title>Hizmetler - Nova Online</title>
     <style>
         body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #0a0a15; color: #d0d0ff; }
-        header { position: fixed; width: 100%; background: rgba(10, 10, 21, 0.92); backdrop-filter: blur(12px); padding: 15px 0; text-align: center; box-shadow: 0 4px 20px rgba(107, 27, 154, 0.4); z-index: 1000; }
-        .logo img { max-height: 70px; transition: transform 0.4s; }
-        .logo img:hover { transform: scale(1.15); }
-        nav a { color: #bb86fc; text-decoration: none; margin: 0 25px; font-size: 17px; font-weight: 500; transition: color 0.3s; }
+        header { position: fixed; width: 100%; background: rgba(10, 10, 21, 0.95); backdrop-filter: blur(12px); padding: 10px 0; text-align: center; box-shadow: 0 4px 20px rgba(107, 27, 154, 0.4); z-index: 1000; border-bottom: 1px solid #6a1b9a; }
+        .logo img { max-height: 80px; }
+        nav { margin-top: 5px; }
+        nav a { color: #bb86fc; text-decoration: none; margin: 0 20px; font-size: 16px; font-weight: 600; text-transform: uppercase; }
         nav a:hover { color: #ffffff; }
-        section { padding: 140px 20px 80px; text-align: center; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: 50px auto; }
-        .service-card { background: #161625; padding: 40px; border-radius: 20px; transition: all 0.4s; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .service-card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(107, 27, 154, 0.4); }
-        .service-card img { width: 100px; height: 100px; object-fit: contain; margin-bottom: 20px; }
-        .service-card h3 { color: #bb86fc; font-size: 24px; }
-        footer { background: #0a0a15; padding: 40px; text-align: center; border-top: 1px solid #bb86fc; }
+        section { padding: 160px 20px 80px; text-align: center; }
+        h2 { font-size: 40px; color: #bb86fc; margin-bottom: 10px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1200px; margin: 60px auto; }
+        .service-card { background: #161625; padding: 40px; border-radius: 20px; border: 1px solid #2a2a4a; transition: all 0.4s; }
+        .service-card:hover { transform: translateY(-10px); border-color: #bb86fc; box-shadow: 0 15px 35px rgba(107, 27, 154, 0.3); }
+        .service-card img { width: 80px; height: 80px; margin-bottom: 20px; border-radius: 10px; }
+        .service-card h3 { color: #bb86fc; font-size: 24px; margin-bottom: 15px; }
+        .service-card p { line-height: 1.6; color: #a0a0cf; }
+        footer { background: #07070f; padding: 30px; text-align: center; border-top: 1px solid #6a1b9a; }
     </style>
 </head>
 <body>
-
     <header>
         <div class="logo">
-            <!-- LOGO BURAYA EKLE: Kendi logo resmini "logo.png" olarak koy veya src'yi değiştir -->
-            <img src="logo.png" alt="Nova Online Logo">
+            <a href="index.html"><img src="https://auto.creavite.co/api/out/wjdrlh3K1ZP3t8lufq_static.png" alt="Nova Online Logo"></a>
         </div>
         <nav>
             <a href="index.html">Ana Sayfa</a>
@@ -36,38 +36,23 @@
     </header>
 
     <section>
-        <h2>Hizmetlerimiz</h2>
-        <p>Size en iyi çözümleri sunuyoruz.</p>
+        <h2>Uzmanlık Alanlarımız</h2>
+        <p>İhtiyaçlarınıza özel, yüksek performanslı çözümler üretiyoruz.</p>
         <div class="services-grid">
             <div class="service-card">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/006/389/344/small/purple-black-vs-logo-letter-design-vector.jpg" alt="Logo Tasarım">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/006/389/344/small/purple-black-vs-logo-letter-design-vector.jpg" alt="Logo">
                 <h3>Logo Tasarım</h3>
-                <p>Markanıza özel modern ve etkileyici logolar tasarlıyoruz.</p>
+                <p>Kurumsal kimliğinizi yansıtan, modern ve akılda kalıcı vektörel tasarımlar.</p>
             </div>
             <div class="service-card">
-                <img src="https://img.freepik.com/premium-photo/program-code-icon-purple-background-3d_327483-701.jpg" alt="Python Kodlama">
+                <img src="https://img.freepik.com/premium-photo/program-code-icon-purple-background-3d_327483-701.jpg" alt="Python">
                 <h3>Python Kodlama</h3>
-                <p>Web uygulamaları, otomasyon ve veri analizi için Python çözümleri.</p>
+                <p>Veri analizi, bot yazılımları ve karmaşık arka plan sistemleri geliştirme.</p>
             </div>
             <div class="service-card">
-                <img src="https://img.freepik.com/premium-photo/3d-programming-code-product-development-website-coding-computer-programming-developer-coding-coding-language-development-java-program-html-data-web-development-concept-3d-render-illustration_473922-763.jpg" alt="Java Kodlama">
-                <h3>Java Kodlama</h3>
-                <p>Güçlü ve ölçeklenebilir Java uygulamaları geliştiriyoruz.</p>
-            </div>
-            <div class="service-card">
-                <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg" alt="HTML/CSS Kodlama">
-                <h3>HTML & CSS Kodlama</h3>
-                <p>Modern, responsive ve şık web siteleri kodluyoruz.</p>
-            </div>
-            <div class="service-card">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/007/036/666/small/3d-black-purple-luxury-abstract-background-overlap-layers-on-dark-space-with-metallic-lines-effect-decoration-graphic-design-element-future-style-concept-for-flyer-banner-brochure-or-landing-page-vector.jpg" alt="Banner Tasarım">
-                <h3>Banner Tasarım</h3>
-                <p>Sosyal medya ve web için dikkat çekici banner'lar hazırlıyoruz.</p>
-            </div>
-            <div class="service-card">
-                <img src="https://st2.depositphotos.com/3086027/46492/i/450/depositphotos_464921080-stock-illustration-web-development-coding-concept-purple.jpg" alt="Tam Web Geliştirme">
-                <h3>Tam Web Geliştirme</h3>
-                <p>Sıfırdan profesyonel web siteleri ve uygulamalar.</p>
+                <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg" alt="Web">
+                <h3>Web Geliştirme</h3>
+                <p>Full-stack HTML, CSS ve JavaScript teknolojileri ile hızlı ve mobil uyumlu siteler.</p>
             </div>
         </div>
     </section>
@@ -75,6 +60,5 @@
     <footer>
         <p>&copy; 2026 Nova Online. Tüm hakları saklıdır.</p>
     </footer>
-
 </body>
 </html>
