@@ -4,17 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımızda - Nova Online</title>
-    <!-- Aynı stil için header ve footer kopyala, önceki kodlardan -->
-    <style> /* Yukarıdaki stil kodlarını buraya da kopyala (header, body vs.) */ </style>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #0a0a15; color: #d0d0ff; }
+        header { position: fixed; width: 100%; background: rgba(10, 10, 21, 0.95); backdrop-filter: blur(12px); padding: 10px 0; text-align: center; box-shadow: 0 4px 20px rgba(107, 27, 154, 0.4); z-index: 1000; border-bottom: 1px solid #6a1b9a; }
+        .logo img { max-height: 80px; }
+        nav { margin-top: 5px; }
+        nav a { color: #bb86fc; text-decoration: none; margin: 0 20px; font-size: 16px; font-weight: 600; text-transform: uppercase; }
+        .content { padding: 180px 20px 100px; max-width: 900px; margin: 0 auto; line-height: 1.8; text-align: center; }
+        .content h2 { color: #bb86fc; font-size: 36px; }
+        .highlight { border: 1px solid #6a1b9a; background: #161625; padding: 30px; border-radius: 15px; margin-top: 40px; }
+        footer { background: #07070f; padding: 30px; text-align: center; border-top: 1px solid #6a1b9a; position: absolute; bottom: 0; width: 100%; }
+    </style>
 </head>
 <body>
-    <header> <!-- Aynı header --></header>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="https://auto.creavite.co/api/out/wjdrlh3K1ZP3t8lufq_static.png" alt="Nova Online Logo"></a>
+        </div>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="services.html">Hizmetler</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+    </header>
 
-    <section style="padding: 140px 20px; text-align: center;">
-        <h2>Hakkımızda</h2>
-        <p>Nova Online olarak yılların deneyimiyle dijital dünyada kaliteli hizmet sunuyoruz. Müşteri memnuniyeti bizim için her şeyden önemli.</p>
-    </section>
+    <div class="content">
+        <h2>Biz Kimiz?</h2>
+        <p>Nova Online, dijital dönüşüm yolculuğunda markalara rehberlik etmek amacıyla kurulmuş bir teknoloji atölyesidir. Kodlamayı bir sanat, tasarımı ise bir dil olarak görüyoruz.</p>
+        <div class="highlight">
+            <p><strong>Vizyonumuz:</strong> Teknolojiyi herkes için ulaşılabilir ve estetik hale getirmek.</p>
+            <p><strong>Misyonumuz:</strong> Müşterilerimizin dijital varlıklarını en yüksek kalite standartlarında inşa etmek.</p>
+        </div>
+    </div>
 
-    <footer> <!-- Aynı footer --></footer>
+    <footer>
+        <p>&copy; 2026 Nova Online. Tüm hakları saklıdır.</p>
+    </footer>
 </body>
 </html>
