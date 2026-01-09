@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Online - Ana Sayfa</title>
+    <title>Nova Online | Dijital Gelecek</title>
     <style>
-        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #0a0a15; color: #d0d0ff; overflow-x: hidden; }
-        header { position: fixed; width: 100%; background: rgba(10, 10, 21, 0.95); backdrop-filter: blur(12px); padding: 10px 0; text-align: center; box-shadow: 0 4px 20px rgba(107, 27, 154, 0.4); z-index: 1000; border-bottom: 1px solid #6a1b9a; }
-        .logo img { max-height: 80px; transition: transform 0.4s; }
-        .logo img:hover { transform: scale(1.1); }
-        nav { margin-top: 5px; }
-        nav a { color: #bb86fc; text-decoration: none; margin: 0 20px; font-size: 16px; font-weight: 600; text-transform: uppercase; transition: color 0.3s; }
-        nav a:hover { color: #ffffff; text-shadow: 0 0 10px #bb86fc; }
-        .hero { background: linear-gradient(rgba(10,10,21,0.8), rgba(10,10,21,0.8)), url('https://static.vecteezy.com/system/resources/previews/036/529/734/non_2x/futuristic-abstract-black-purple-technology-background-background-for-gaming-esports-banner-illustration-vector.jpg') center/cover no-repeat fixed; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 0 20px; }
-        .hero h1 { font-size: clamp(40px, 8vw, 70px); color: #bb86fc; text-shadow: 0 0 25px #6a1b9a; margin-bottom: 10px; }
-        .hero p { font-size: 22px; max-width: 800px; margin: 0 auto 40px; color: #b0b0cf; }
-        .btn { background: #6a1b9a; color: white; padding: 16px 45px; border: none; border-radius: 50px; font-size: 18px; font-weight: bold; cursor: pointer; transition: all 0.4s; box-shadow: 0 0 15px rgba(107, 27, 154, 0.5); text-decoration: none; display: inline-block; }
-        .btn:hover { background: #bb86fc; transform: translateY(-5px); box-shadow: 0 0 30px rgba(187, 134, 252, 0.7); color: #000; }
-        footer { background: #07070f; padding: 30px; text-align: center; border-top: 1px solid #6a1b9a; margin-top: 50px; }
+        :root { --primary: #bb86fc; --secondary: #6a1b9a; --bg: #05050a; --card: #0f0f1e; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: white; overflow-x: hidden; }
+        
+        header { position: fixed; width: 100%; padding: 10px 0; background: rgba(5, 5, 10, 0.8); backdrop-filter: blur(20px); z-index: 1000; border-bottom: 1px solid rgba(187, 134, 252, 0.2); display: flex; justify-content: space-around; align-items: center; }
+        .logo img { height: 75px; filter: drop-shadow(0 0 10px var(--secondary)); transition: 0.5s; }
+        .logo img:hover { transform: rotate(-5deg) scale(1.1); }
+        
+        nav a { color: #d0d0ff; text-decoration: none; margin: 0 20px; font-weight: 600; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; }
+        nav a:hover { color: var(--primary); text-shadow: 0 0 15px var(--primary); }
+
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: radial-gradient(circle at center, #1a0b2e 0%, #05050a 100%); position: relative; }
+        .hero::before { content: ''; position: absolute; width: 100%; height: 100%; background: url('https://www.transparenttextures.com/patterns/stardust.png'); opacity: 0.3; }
+        
+        .hero-box { position: relative; z-index: 2; animation: fadeInUp 1s ease; }
+        h1 { font-size: 85px; margin: 0; background: linear-gradient(to right, #fff, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 10px 20px rgba(106, 27, 154, 0.5)); }
+        p { font-size: 22px; color: #a0a0cf; max-width: 600px; margin: 20px auto; }
+
+        .glow-btn { padding: 18px 45px; background: var(--secondary); color: white; border: none; border-radius: 12px; font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.4s; box-shadow: 0 0 20px rgba(106, 27, 154, 0.6); text-decoration: none; display: inline-block; }
+        .glow-btn:hover { background: var(--primary); color: #000; transform: translateY(-5px); box-shadow: 0 0 40px var(--primary); }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        footer { padding: 40px; text-align: center; font-size: 14px; border-top: 1px solid rgba(255,255,255,0.05); color: #555; }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="https://auto.creavite.co/api/out/wjdrlh3K1ZP3t8lufq_static.png" alt="Nova Online Logo"></a>
-        </div>
+        <div class="logo"><img src="https://auto.creavite.co/api/out/wjdrlh3K1ZP3t8lufq_static.png" alt="Logo"></div>
         <nav>
             <a href="index.html">Ana Sayfa</a>
             <a href="services.html">Hizmetler</a>
@@ -34,15 +41,13 @@
     </header>
 
     <section class="hero">
-        <h1>Nova Online</h1>
-        <p>Geleceğin dijital dünyasını bugünden inşa ediyoruz. Modern web çözümleri ve estetik tasarımın buluşma noktası.</p>
-        <div>
-            <a href="services.html" class="btn">Hizmetlerimizi Keşfet</a>
+        <div class="hero-box">
+            <h1>NOVA ONLINE</h1>
+            <p>Sınırları zorlayan kodlama ve estetik tasarımın mükemmel uyumuyla tanışın.</p>
+            <a href="services.html" class="glow-btn">PROJEYE BAŞLA</a>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Nova Online. Tüm hakları saklıdır.</p>
-    </footer>
+    <footer>&copy; 2026 Nova Online. Tüm hakları saklıdır.</footer>
 </body>
 </html>
