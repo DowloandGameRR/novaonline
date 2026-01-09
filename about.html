@@ -6,25 +6,32 @@
     <title>Hakkımızda | Nova Online</title>
     <style>
         :root { --accent: #bb86fc; --bg: #050508; }
-        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: #e0e0ff; }
-        .bg-layer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 90% 10%, #1a1a3a 0%, #050508 50%); z-index: -1; }
-        header { position: fixed; width: 100%; padding: 20px 0; background: rgba(5, 5, 8, 0.7); backdrop-filter: blur(15px); z-index: 1000; display: flex; justify-content: space-around; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .logo img { height: 60px; }
-        nav a { color: #aaa; text-decoration: none; margin: 0 20px; font-size: 15px; }
-        .content { padding: 200px 15% 100px; max-width: 800px; margin: 0 auto; text-align: center; }
-        h2 { font-weight: 300; font-size: 32px; letter-spacing: 2px; color: white; }
-        p { line-height: 2; color: #888; font-size: 17px; margin-top: 30px; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: #e0e0ff; overflow: hidden; }
+        .animated-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(45deg, #050508, #1a1a3a, #050508);
+            background-size: 400% 400%;
+            animation: gradientFlow 15s ease infinite;
+            z-index: -1;
+        }
+        @keyframes gradientFlow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        header { position: fixed; width: 100%; padding: 25px 0; background: rgba(5, 5, 8, 0.4); backdrop-filter: blur(20px); z-index: 1000; display: flex; justify-content: space-around; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.03); }
+        .logo img { height: 65px; }
+        nav a { color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 20px; font-size: 14px; }
+        .content { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 700px; margin: 0 auto; text-align: center; padding: 0 20px; }
+        h2 { font-weight: 200; font-size: 36px; letter-spacing: 4px; color: white; margin-bottom: 30px; }
+        p { line-height: 2.2; color: rgba(255,255,255,0.4); font-size: 16px; font-weight: 300; }
     </style>
 </head>
 <body>
-    <div class="bg-layer"></div>
+    <div class="animated-bg"></div>
     <header>
         <div class="logo"><img src="https://auto.creavite.co/api/out/wjdrlh3K1ZP3t8lufq_static.png" alt="Logo"></div>
         <nav><a href="index.html">Ana Sayfa</a><a href="services.html">Hizmetler</a><a href="about.html">Hakkımızda</a><a href="contact.html">İletişim</a></nav>
     </header>
     <div class="content">
         <h2>Hakkımızda</h2>
-        <p>Nova Online, dijital dünyadaki ihtiyaçlarınıza sade ve etkili çözümler sunmak için kurulmuştur.sadece kaliteye odaklanan bir çalışma prensibini benimsiyoruz.</p>
+        <p>Nova Online, teknoloji ve estetiği en yalın haliyle sunmak için var. Gereksiz detaylardan arındırılmış, işlevsel ve zamansız dijital deneyimler tasarlıyoruz. Her projemizde kaliteyi bir standart olarak değil, bir söz olarak görüyoruz.</p>
     </div>
 </body>
 </html>
