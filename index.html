@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Online</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #0a0a15; color: #d0d0ff; }
+        header { position: fixed; width: 100%; background: rgba(10, 10, 21, 0.92); backdrop-filter: blur(12px); padding: 15px 0; text-align: center; box-shadow: 0 4px 20px rgba(107, 27, 154, 0.4); z-index: 1000; }
+        .logo img { max-height: 70px; transition: transform 0.4s; }
+        .logo img:hover { transform: scale(1.15); }
+        nav a { color: #bb86fc; text-decoration: none; margin: 0 25px; font-size: 17px; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #ffffff; }
+        .hero { background: linear-gradient(rgba(10,10,21,0.75), rgba(10,10,21,0.85)), url('https://static.vecteezy.com/system/resources/previews/036/529/734/non_2x/futuristic-abstract-black-purple-technology-background-background-for-gaming-esports-banner-illustration-vector.jpg') center/cover no-repeat fixed; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+        .hero h1 { font-size: 60px; color: #bb86fc; text-shadow: 0 0 20px #6a1b9a; }
+        .hero p { font-size: 24px; max-width: 800px; margin: 20px auto 40px; }
+        .btn { background: #6a1b9a; color: white; padding: 15px 40px; border: none; border-radius: 50px; font-size: 18px; cursor: pointer; transition: all 0.4s; box-shadow: 0 0 15px rgba(107, 27, 154, 0.5); }
+        .btn:hover { background: #bb86fc; transform: translateY(-5px); box-shadow: 0 0 30px rgba(187, 134, 252, 0.7); }
+        footer { background: #0a0a15; padding: 40px; text-align: center; border-top: 1px solid #bb86fc; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <!-- LOGO BURAYA EKLE: Kendi logo resmini "logo.png" olarak koy veya src'yi değiştir -->
+            <img src="logo.png" alt="Nova Online Logo">
+        </div>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="services.html">Hizmetler</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Nova Online</h1>
+        <p>Profesyonel web tasarım, kodlama ve grafik hizmetleri ile dijital dünyada fark yaratın.</p>
+        <a href="services.html"><button class="btn">Hizmetleri İncele</button></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nova Online. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
